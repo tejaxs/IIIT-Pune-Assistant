@@ -1,0 +1,391 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  font-family: Roboto, Helvetica, sans-serif;
+}
+/* header */
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upper-nav{
+  height: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.nav-btn-container{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 40px;
+  background-color: rgb(44, 44, 161);
+  border-radius: 10px;
+  border: transparent;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.clg-img{
+  height: 80px;
+}
+
+.india-img{
+  height: 70px;
+}
+
+
+.panel-container{
+  height: 50px;
+  width: 30%;
+  background-color: rgb(242, 228, 228);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3px;
+  padding: 5px;
+}
+
+.panel-img{
+  height: 20px;
+}
+
+.lower-nav{
+  height: 50px;
+  width: 80%;
+}
+
+.nav-elements{
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(46, 43, 43);
+}
+
+a:hover{
+  color: rgb(193, 135, 27);
+}
+
+
+
+.hr-line{
+  height: 3px;
+  background-color: rgb(193, 135, 27);
+  width: 80%;
+}
+
+/* footer */
+
+.upper-footer{
+  background-color: rgb(9, 9, 9);
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.lower-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  background-color: rgb(48, 41, 41);
+  height: 50px;
+}
+
+.quick-links{
+  margin: 50px;
+  width: 280px;
+}
+
+.footer-title{
+  color: white;
+}
+
+.footer-hr{
+  height: 1px;
+  background-color: red;
+  margin-bottom: 10px;
+}
+
+.quick-title-ul{
+  list-style-type: none;  
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-title-elements{
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.para{
+  color: white;
+  font-size: medium;
+  margin: 10px;
+}
+
+/* Card */
+.card-container{
+  height: 420px;
+  width: 30%;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+
+.card-title{
+  height: 10%;
+  background-color: rgb(24, 24, 182);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 5px 5px 5px 10px;
+  font-size: large;
+  font-weight: 500;
+  color: white;
+}
+.card-content{
+  overflow-y: scroll;
+  padding: 10px;
+  max-height: 320px;
+  font-size: 200;
+  color: rgb(33, 29, 29);
+}
+
+.card-content-ele{
+  font-weight: 100;
+}
+
+.home-content{
+  height: 1250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upper-home-content{
+  height: 450px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.lower-home-content{
+  height: 450px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+
+.slider{
+  /* flex-grow: 1; */
+  height: 420px;
+  width: 65%;  
+  background-color: pink;
+}
+
+/* InfoDeskCard */
+.info-desk-content{
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  
+}
+
+.info-desk-card{
+  height: 170px;
+  width: 150px;
+  background-color: rgb(219, 219, 237);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.info-desk-card:hover{
+  background-color: rgb(4, 9, 171);
+  color: white;
+}
+
+.info-desk-title{
+  font-size: '16px';
+  font-weight: 500;
+}
+
+.info-desk-header{
+  font-size: x-large;
+  padding: 10px 10px 20px 10px;
+  font-weight: 600;
+}
+
+.info-desk-img-container{
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 100px;
+  border: solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-desk-img{
+  height: 50px;
+}
+
+.info-desk-card-continer{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for the popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the popup content */
+.popup-content {
+  width: 80%; /* Adjusted width to 80% of the screen */
+  max-width: 600px; /* Increased maximum width */
+  background-color: #fff; /* Light background color */
+  border: 1px solid #ccc; /* Added border for separation */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 20px; /* Consistent padding throughout */
+  display: flex; /* Allow stacking of chat area and input section */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Styles for the popup header */
+.popup-header {
+  display: flex;
+  justify-content: space-between; /* Align header title and close button */
+  align-items: center; /* Center elements vertically */
+  margin-bottom: 10px; /* Small bottom margin */
+  border-bottom: 1px solid #eee; /* Light border to separate header */
+}
+
+.popup-header h2 {
+  margin: 0;
+  color: #333; /* Darker header text color */
+}
+
+.popup-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; /* Slightly smaller close button icon */
+  color: #333; /* Darker close button icon color */
+}
+
+/* Styles for the chat area */
+.chat-area {
+  flex: 1; /* Allow chat area to fill remaining space */
+  overflow-y: auto; /* Enable scrolling if content exceeds height */
+  border-radius: 4px; /* Rounded corners for chat area */
+  padding: 10px; /* Consistent padding */
+  margin-bottom: 10px; /* Small bottom margin */
+  /* Added minimum height */
+  min-height:300px; 
+  background-color: #f5f5f5; /* Light gray background with subtle contrast */
+
+}
+
+/* Styles for individual chat messages (replace with your implementation) */
+.message {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+
+.user-message {
+  background-color: #e2f3ff; /* Light blue for user messages */
+  color: #000; /* Black text color for user messages */
+}
+
+.assistant-message {
+  background-color: #f0f0f0; /* Light gray for assistant messages */
+  color: #333; /* Dark gray text color for assistant messages */
+}
+
+/* Styles for the message input container */
+.input-container {
+  display: flex;
+  align-items: center; /* Align input and button vertically */
+}
+
+/* Styles for the message input field */
+.message-input {
+  flex: 1; /* Allow input field to fill available space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 10px; /* Small right margin */
+}
+
+/* Styles for the send button */
+.send-button {
+  padding: 10px 15px; /* Consistent padding */
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007bff; /* Blue button color */
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px; /* Consistent button text size */
+  transition: background-color 0.2s ease-in-out; /* Hover effect transition */
+}
+
+.send-button:hover {
+  background-color: #0067cc; /* Darker blue on hover */
+}
+
+/* Media query for smaller screens (adjust as needed) */
+@media (max-width: 768px) {
+  .popup-content {
+    width: 90%;
+  }
+}
