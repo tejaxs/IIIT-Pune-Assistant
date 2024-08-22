@@ -5,6 +5,10 @@
 
 *IIIT-Pune-Assistant* is a digital assistant designed to assist students, faculty, and staff at IIIT Pune with various tasks. This project leverages modern technologies to provide an efficient and user-friendly experience for managing day-to-day activities on campus.
 
+## Demo
+
+Check out the video demonstration of IIIT-Pune-Assistant on [YouTube](https://youtu.be/IDbtE8Sd_VE?si=zAJeh810gCB9YXN1).
+
 ## Features
 
 - *Interactive Assistant*: Engage with a responsive assistant that can handle a variety of queries and tasks.
